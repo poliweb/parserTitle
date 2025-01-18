@@ -58,3 +58,9 @@ npm install
 
 # or
 # npm install axios cheerio chalk
+
+```
+
+## Пример работы кода в консоли
+
+![Пример работы кода в консоли](https://res.cloudinary.com/poliweb/image/upload/v1737179689/parser_title.webp)
