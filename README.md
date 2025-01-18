@@ -31,13 +31,13 @@ node fetchData.js https://google.com
 - Запуск из консоли: `./fetchData.js https://example.com https://google.com`
 
 ```bash
-./fetchData.js https://poliweb.su https://kanban.poliweb.su/ https://google.com
+./fetchData.js https://poliweb.su https://dev.to/ https://google.com
 
 ```
 - или можно запустить спомощю node из корневой папки
 
 ```bash
-node fetchData.js https://poliweb.su https://kanban.poliweb.su/ https://google.com
+node fetchData.js https://poliweb.su https://dev.to/ https://google.com
 
 ```
 
