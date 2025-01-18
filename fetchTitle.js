@@ -1,20 +1,19 @@
 #!/usr/bin/env node
 
-const axios = require('axios');
-const cheerio = require('cheerio');
+// fetchTitle.js
 
 async function fetchTitle(url) {
     try {
         // Отправляем запрос на указанный URL
-        const response = await axios.get(url);
+        const response = await get(url);
 
         // Загружаем HTML в cheerio
-        const $ = cheerio.load(response.data);
+        const $ = load(response.data);
 
         // Извлекаем содержимое тега <title>
         const title = $("title").text();
 
-        console.log(`Title for ${url}: ${title}`);
+        console.log(`\n\nTitle for ${url}: ${title}`);
     } catch (error) {
         console.error(`Error fetching URL ${url}:`, error.message);
     }
@@ -27,6 +26,17 @@ if (args.length === 0) {
     process.exit(1);
 }
 
-// Парсим URL из аргументов командной строки
-const url = args[0];
-fetchTitle(url);
+// Основная функция
+async function main() {
+    const url = args[0];
+    await fetchTitle(url); // Ждем завершения fetchTitle
+
+    const chalk = require('chalk');
+
+console.log(
+    `\n\n✨ ${chalk.bold.yellow('Code writer of the high-quality code:')} 🧔🏼‍♂️ ${chalk.bgGreen.black(' PoliWeb ')}${chalk.bgMagenta.white(' Lev Tolstoy ')} ✨`
+);
+}
+
+// Запускаем основную функцию
+main();

@@ -41,6 +41,12 @@ async function main(urls) {
     const outputFile = 'results.json';
     fs.writeFileSync(outputFile, JSON.stringify(results, null, 2), 'utf-8');
     console.log(`Results saved to ${outputFile}`);
+   
+    const chalk = require('chalk');
+
+    console.log(
+        `\n\n✨ ${chalk.bold.yellow('Code writer of the high-quality code:')} 🧔🏼‍♂️ ${chalk.bgGreen.black(' PoliWeb ')}${chalk.bgMagenta.white(' Lev Tolstoy ')} ✨`
+    );
 }
 
 // Проверяем аргументы командной строки
