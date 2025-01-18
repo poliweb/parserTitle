@@ -37,8 +37,12 @@
 - Установленные зависимости:
   - `axios`
   - `cheerio`
+  - `chalk`
 
 Установите зависимости с помощью команды:
 
 ```bash
-npm install axios cheerio
+npm install
+
+# or
+# npm install axios cheerio chalk
