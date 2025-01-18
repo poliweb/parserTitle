@@ -15,6 +15,12 @@
 ./fetchTitle.js https://google.com
 
 ```
+- или можно запустить спомощю node из корневой папки
+
+```bash
+node fetchData.js https://google.com
+
+```
 
 ### `fetchData.js`
 - Парсит один или несколько сайтов, извлекая:
@@ -25,7 +31,13 @@
 - Запуск из консоли: `./fetchData.js https://example.com https://google.com`
 
 ```bash
-./fetchData.js https://example.com https://google.com
+./fetchData.js https://example.com https://google.com https://example2.com
+
+```
+- или можно запустить спомощю node из корневой папки
+
+```bash
+node fetchData.js https://example.com https://google.com https://example2.com
 
 ```
 
